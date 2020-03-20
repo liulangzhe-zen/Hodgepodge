@@ -1,0 +1,3 @@
+include ':app', ':base_library:common', ':login_business', ':module_news', ':module_shop', ':module_my', ':module_search', ':main_business', ':module_live', ':module_view',
+        ':module_play', ':module_book'
+rootProject.name='Hodgepodge'
