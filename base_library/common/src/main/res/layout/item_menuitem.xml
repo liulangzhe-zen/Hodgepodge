@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/ui_main_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/view_vertical"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@color/cff6c6c"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/lin_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    tools:text="专场特卖"
+                    android:textColor="@color/ui_mc_txt_gray_bg"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+                    android:id="@+id/img_left"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    tools:src="@mipmap/ic_launcher"
+                    android:visibility="gone" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_content_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/lin_right"
+                android:layout_toRightOf="@+id/lin_left"
+                android:gravity="center_vertical"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                tools:text="1测试文字1测试"
+                android:textSize="15dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+
+            <LinearLayout
+                android:id="@+id/lin_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    tools:text="提示文字"
+                    android:textColor="@color/ui_mc_txt_gray_bg"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/tv_remind"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bar_title_right" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

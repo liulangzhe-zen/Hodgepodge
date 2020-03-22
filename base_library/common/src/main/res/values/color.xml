@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cff6c6c">#ff6c6c</color>
+    <color name="ui_white">#ffffff</color>
+    <color name="ui_divide">#e6ebf0</color>
+    <color name="ui_main_bg">#F3F3F3</color>
+    <color name="ui_mc_txt_gray_bg">#a6a6a6</color>
+
+
+    <color name="ui_A3A3A3">#A3A3A3</color>
+
+
+</resources>

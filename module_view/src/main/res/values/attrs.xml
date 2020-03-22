@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--name：属性的名字  format：该属性可以拥有的数据类型-->
+    <declare-styleable name="CircleButton">
+        <attr name="backgroundColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="text" format="string"/>
+        <attr name="textColor" format="color"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Ui_MenuItemLayout">
+        
+        <attr name="title_text" format="string"/>
+        <!--   展示图片还是文字     false 文字  true 图片  -->
+        <attr name="left_whetherShow" format="boolean"/>
+        <attr name="left_title" format="string"/>
+        <attr name="left_img" format="reference"/>
+
+        <!--   展示图片还是文字     false 文字  true 图片  -->
+        <attr name="right_whetherShow" format="boolean"/>
+        <attr name="right_title" format="string"/>
+        <attr name="right_img" format="reference"/>
+
+        <!--是否展示提醒-->
+        <attr name="remind" format="boolean"/>
+        <attr name="remind_text" format="string"/>
+
+        <!-- 展示上面阴影都大小-->
+        <attr name="divide_line_style" format="integer"/>
+
+        <!-- 是否展示竖直的线-->
+        <attr name="divide_vertical" format="boolean"/>
+
+        
+    </declare-styleable>
+    
+    
+    
+    
+
+    <declare-styleable name="Ui_LottieTabView">
+        <attr name="text_selected_color" format="color"/>
+        <attr name="text_normal_color" format="color"/>
+        <attr name="text_size" format="dimension"/>
+        <attr name="lottie_path" format="string"/>
+        <attr name="icon_normal" format="reference"/>
+        <attr name="tab_selected" format="boolean"/>
+        <attr name="tab_name" format="string"/>
+
+
+
+        <attr name="top_bulge" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <!--edtext 密码分割   6位-->
+    <declare-styleable name="MNPasswordEditText">
+        <!--密码框的颜色-->
+        <attr name="mnPsw_border_color" format="color" />
+        <!--密码框选中的颜色-->
+        <attr name="mnPsw_border_selected_color" format="color" />
+        <!--密码文字的颜色,圆形密码颜色-->
+        <attr name="mnPsw_text_color" format="color" />
+        <!--密码框的圆角-->
+        <attr name="mnPsw_border_radius" format="dimension" />
+        <!--密码框的线的大小-->
+        <attr name="mnPsw_border_width" format="dimension" />
+        <!--密码框的每个间隔,只有样式2才起作用-->
+        <attr name="mnPsw_item_margin" format="dimension" />
+        <!--密码框背景色-->
+        <attr name="mnPsw_background_color" format="color" />
+        <!--密码框输入的模式:4.明文,3.文字,2.图片,1.圆形-->
+        <attr name="mnPsw_mode" format="enum">
+            <!--圆形默认-->
+            <enum name="Circle" value="1" />
+            <!--图片-->
+            <enum name="Bitmap" value="2" />
+            <!--文本-->
+            <enum name="Text" value="3" />
+            <!--原始-->
+            <enum name="OriginalText" value="4" />
+        </attr>
+        <!--密码框样式: 1.连在一起 2.分开单独显示  3.下划线形式-->
+        <attr name="mnPsw_style" format="enum">
+            <!--连在一起-->
+            <enum name="StyleDefault" value="1" />
+            <!--单独-->
+            <enum name="StyleOneself" value="2" />
+            <!--下划线形式-->
+            <enum name="StyleUnderLine" value="3" />
+        </attr>
+        <!--密码文字遮盖-->
+        <attr name="mnPsw_cover_text" format="string" />
+        <!--密码图片遮盖-->
+        <attr name="mnPsw_cover_bitmap_id" format="reference" />
+        <!--密码圆形遮盖颜色-->
+        <attr name="mnPsw_cover_circle_color" format="color" />
+        <!--密码圆形遮盖半径-->
+        <attr name="mnPsw_cover_circle_radius" format="dimension" />
+        <!--密码图片遮盖长宽-->
+        <attr name="mnPsw_cover_bitmap_width" format="dimension" />
+
+    </declare-styleable>
+
+
+</resources>
